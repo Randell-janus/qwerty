@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap");
+@layer base {
+  body {
+    @apply font-cairo text-xs md:text-sm;
+  }
+
+  h1 {
+    @apply text-xl md:text-2xl;
+  }
+
+  h2 {
+    @apply text-lg md:text-xl;
+  }
+
+  h3 {
+    @apply text-base md:text-lg;
+  }
+}
+
+@layer components {
+  .btn-primary-filled {
+    @apply rounded-lg px-5 py-2 cursor-pointer;
+    @apply bg-gray-800 text-white;
+    @apply hover:bg-gray-700 transition ease-out duration-200;
+  }
+
+  .input-outline {
+    @apply rounded-lg px-5 py-2 border border-gray-200;
+    @apply focus:outline-none focus:ring-0 focus:border-black focus:z-10;
+  }
+}
