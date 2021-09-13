@@ -6,6 +6,6 @@ Basic TypeScript implementation using create-react-app TypeScript template
 
 - Type aliases
 - Prop types
-- Hook types: useState
+- Generic classes: useState hook
 - Event types: ChangeEvent, FormEvent
 - Function types
